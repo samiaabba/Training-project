@@ -1,0 +1,17 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suit name = "testNGlestenersuit">
+<lisreners>
+<listenar class-name= "listeners.listeners"/>
+</lisreners>
+<test name = "Login Test">
+<classes>
+<class name ="listeners.LoginTest">
+<methods>
+<include name ="LoginByEmail"/>
+<exclude name ="LoginByFacebook"/>
+</methods>
+</class>
+</classes>
+</test>
+</suit>
